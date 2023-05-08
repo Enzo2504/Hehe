@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>       
+        <nav>
+          <label class="logo">Enda Furniture</label>
+          <ul>
+            <li class="nav-link"><a href="/index.html">Home</a></li>
+            <li class="nav-link"><a href="/contact.html">Contact</a></li>
+          </ul>
+        </nav>        
+      </header>    
+<body>
+
+    <div id="popup">
+        <div class="card">
+            <p>
+                Do you want to submit this form?
+            </p>
+            <br>
+            <div class="item-row buttons" style="justify-content: space-between;">
+                <button id="cancel" class="secondary">
+                    Cancel
+                </button>
+                <button id="confirm" class="primary">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>
+            Please fill the form below and submit and we will get back to you regarding your query.
+        </p>
+    </div>
+    <div class="card">
+        <form id="form" onsubmit="return false">
+            <div class="item-row">
+                <div class="item-col">
+                    <input type="text" placeholder="Name">
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-col">
+                    <input type="number" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-col">
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-col">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="item-row">
+                <div class="item-col">
+                    <textarea type="text" placeholder="Explanation" rows="5"></textarea>
+                </div>
+            </div>
+
+            <div class="item-row buttons" style="justify-content: end;">
+                <button id="reset" type="reset" class="secondary">
+                    Reset
+                </button>
+                <button id="submit" type="submit" class="primary" disabled="disabled">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
